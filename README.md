@@ -17,21 +17,17 @@ Azure Cosmos DB is a globally distributed multi-model database. One of the suppo
 	* [Node.js](https://nodejs.org/en/) version v0.10.29 or higher.
 	* [Git](http://git-scm.com/).
 
-
-1. Clone this repository using `git clone git@github.com:Azure-Samples/azure-cosmos-db-sql-api-nodejs-getting-started.git cosmosdb`
-
-2. Change directories to the repo using `cd cosmosdb`
-
-3. Next, substitute the endpoint and authorization key in `config.js` with your Azure Cosmos DB account's values.
+1. Substitute the endpoint and authorization key in `localhost.env` with your Azure Cosmos DB account's values.
 
 	```
-	config.endpoint = "~your Azure Cosmos DB endpoint here~";
-	config.primaryKey = "~your auth key here~";
+	ENDPOINT=~your Azure Cosmos DB endpoint here~
+	KEY=~your auth key here~
 	```
+2. Set NODE_ENV environmnet variable to "localhost".
 
-5. Run `npm install` in a terminal to install required npm modules
+3. Run `npm install` in a terminal to install required npm modules
  
-6. Run `node app.js` in a terminal to start your start your node application.
+4. Run `Run Script: start` from Visual Studio Code.
 
 ## About the code
 The code included in this sample is intended to get you quickly started with a Node.js console application that connects to Azure Cosmos DB with the SQL API.
